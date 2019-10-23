@@ -9,70 +9,105 @@
   </head>
   <body>
     <div class="container">
-      <h1>Calculator</h1>
+      <h1>Calculator :)</h1>
       <div class="row">
-        <div class="col-md-3">
-          <h2>Add</h2>
-          <form id="add">
-            <div class="form-group">
-              <label for="add1">1st number:</label>
-              <input id="add1" class="form-control" type="text">
-            </div>
-            <div class="form-group">
-              <label for="add2">2nd number:</label>
-              <input id="add2" class="form-control" type="text">
-            </div>
-            <button type="submit" class="btn">Add!</button>
-          </form>
-        </div>
-        <div class="col-md-3">
-          <h2>Subtract</h2>
-          <form id="subtract">
-            <div class="form-group">
-              <label for="sub1">1st number:</label>
-              <input id="sub1" class="form-control" type="text">
-            </div>
-            <div class="form-group">
-              <label for="sub2">2nd number:</label>
-              <input id="sub2" class="form-control" type="text">
-            </div>
-            <button type="submit" class="btn">Subtract!</button>
-          </form>
-        </div>
-        <div class="col-md-3">
-          <h2>Multiply</h2>
-          <form id="multiply">
-            <div class="form-group">
-              <label for="mult1">1st number:</label>
-              <input id="mult1" class="form-control" type="text">
-            </div>
-            <div class="form-group">
-              <label for="mult2">2nd number:</label>
-              <input id="mult2" class="form-control" type="text">
-            </div>
-            <button type="submit" class="btn">Multiply!</button>
-          </form>
-        </div>
-        <div class="col-md-3">
-          <h2>Divide</h2>
-          <form id="divide">
-            <div class="form-group">
-              <label for="div1">1st number:</label>
-              <input id="div1" class="form-control" type="text">
-            </div>
-            <div class="form-group">
-              <label for="div2">2nd number:</label>
-              <input id="div2" class="form-control" type="text">
-            </div>
-            <button type="submit" class="btn">Divide!</button>
-          </form>
+        <div class="col-md-12">
+          <div class="screen border">
+            <h3 id="display"></h3>
+          </div>
         </div>
       </div>
-
-      <hr>
-      <h2>Result:</h2>
-      <div id="output">
-
+      <div class="row">
+        <div class="col-md-6">
+          <div class="border">
+            <p>CLEAR</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-3">
+          <div class="key border" id="+">
+            <p>+</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="key border" id="1">
+            <p>1</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="key border" id="2">
+            <p>2</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="key border" id="3">
+            <p>3</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="key border" id="-">
+            <p>-</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="key border" id="4">
+            <p>4</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="key border" id="5">
+            <p>5</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="key border" id="6">
+            <p>6</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="key border" id="*">
+            <p>*</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="key border" id="7">
+            <p>7</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="key border" id="8">
+            <p>8</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="key border" id="9">
+            <p>9</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="key border" id="/">
+            <p>/</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-9">
+          <div class="key border" id="0">
+            <p>0</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="key border">
+            <p>=</p>
+          </div>
+        </div>
       </div>
     </div>
   </body>
