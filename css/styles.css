@@ -10,15 +10,14 @@ body {
   padding-bottom: 30px;
   padding-top: 30px;
   border-radius: 25px;
-  border-width: 4px;
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.8);
+  border: 4px solid rgba(0, 0, 0, 0.8);
 }
 h1 {
   text-align: center;
   font-size: 60px;
   font-weight: bold;
   font-family: serif;
+  font-variant: small-caps;
 }
 p {
   text-align: center;
@@ -28,22 +27,13 @@ p {
   margin-top: 10px;
 }
 
-/* .key{
-  border-width: 2px;
-  border-color: red;
-  border-style: solid;
-  border-radius: 25px;
-} */
-
 .row {
   margin-top: 10px;
 }
 
-.border {
-  border-width: 4px;
-  border-style: solid;
-  border-radius: 25px;
-  border-color: red;
+.boardingSchool {
+  border-radius: 30px;
+  border: 2px rgba(0, 0, 0, 0.6) solid;
 }
 
 .screen {
