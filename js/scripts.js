@@ -1,33 +1,34 @@
-var add = function(number1, number2) {
-  return number1 + number2;
-};
+var result = "";
 
-var subtract = function(number1, number2) {
-  return number1 - number2;
-};
+function doMath(string) {
+  var array = string.split(' ');
+  var num1 = parseInt(array[0]);
+  var num2 = parseInt(array[2]);
+  var operator = array[1];
 
-var multiply = function(number1, number2) {
-  return number1 * number2;
-};
-
-var divide = function(number1, number2) {
-  return number1 / number2;
-};
-
-var number1 = "";
-var number2 = "";
-var operation = "";
+  if (operator === "+") {
+    return (num1 + num2);
+  } else if (operator === "-") {
+    return (num1 - num2);
+  } else if (operator === "*") {
+    return (num1 * num2);
+  } else if (operator === "÷") {
+    return (num1 / num2);
+  }
+}
 
 $(document).ready(function() {
   $("div.key").click(function() {
-    if ( (this.id === "+") || (this.id === "-") || (this.id === "*") || (this.id === "/") ) {
-      return;
-    } else if (this.id === "clr") {
-    } else {
-    number1 = number1 + this.id;
-    $("h3#display").text(number1);
-    }
-  });
+    if (this.id === "clr") {
+      result = "";
+    } else if (this.id === "=") {
+      result = doMath(result);
 
-  // $("h3#display").text(number1);
+    } else {
+      result += this.id;
+    }
+
+    $("h3#display").text(result);
+
+  });
 });
