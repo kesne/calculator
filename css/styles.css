@@ -33,6 +33,7 @@ p {
 
 .boardingSchool {
   border-radius: 30px;
+  background-color: rgba(0,0,0,0.1);
   border: 2px rgba(0, 0, 0, 0.6) solid;
 }
 

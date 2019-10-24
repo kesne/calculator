@@ -33,6 +33,8 @@ function pressLogic(keyPress) {
   } else if (keyPress === "=") {
     result = doMath(result);
     hasOp = 0;
+  } else if (opCheck(keyPress) && result === "") {
+    result = "";
   } else if (hasOp === 0 && opCheck(keyPress)) {
     result += keyPress;
     hasOp = 1;
